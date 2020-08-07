@@ -84,7 +84,7 @@ $(function () {
 		const data = { user_id: email, user_pwd: password };
 		const url = 'http://localhost:3000';
 		
-		fetch(`${url}/login`, {
+		fetch(`${url}/api/login/signin`, {
 			method: 'POST',
 			body: JSON.stringify(data),
 			headers: {
